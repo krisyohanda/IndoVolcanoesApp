@@ -1,6 +1,6 @@
 package com.example.indovolcanoesapp.network
 
-class Volcanoes (
+data class Volcanoes (
     val nama: String,
     val bentuk: String,
     val tinggi_meter: String,
