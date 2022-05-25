@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/volcanoesListFragment">
+
+    <fragment
+        android:id="@+id/volcanoesListFragment"
+        android:name="com.example.indovolcanoesapp.ui.VolcanoesListFragment"
+        android:label="List Indonesia Volcanoes"
+        tools:layout="@layout/fragment_volcanoes_list">
+        <action
+            android:id="@+id/action_volcanoesListFragment_to_volcanoesDetailFragment"
+            app:destination="@id/volcanoesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/volcanoesDetailFragment"
+        android:name="com.example.indovolcanoesapp.ui.VolcanoesDetailFragment"
+        android:label="Detail Volcanoes" />
+</navigation>
